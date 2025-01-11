@@ -1,0 +1,17 @@
+{
+  games: [
+    {
+      id: 1,
+      title: "Wingspan",
+      owner: 1,
+    },
+  ],
+  users: [
+    {
+      id: 1,
+      username: "smoon",
+      displayName: "Sven Moon",
+      role: "admin",
+    }, 
+  ],
+}
