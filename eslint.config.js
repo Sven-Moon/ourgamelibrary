@@ -6,36 +6,40 @@ import tseslint from "typescript-eslint";
 import react from "eslint-plugin-react";
 
 export default tseslint.config(
-	{ ignores: ["dist"] },
-	{
-		extends: [js.configs.recommended, ...tseslint.configs.strictTypeChecked],
-		files: ["**/*.{ts,tsx}"],
-		languageOptions: {
-			ecmaVersion: 2020,
-			globals: globals.browser,
-			parserOptions: {
-        project: ["./tsconfig.json", "./tsconfig.app.json", "./tsconfig.node.json"],
-				tsconfigRootDir: import.meta.dirname,
-			},
-		},
-		plugins: {
-			react,
-			"react-hooks": reactHooks,
-			"react-refresh": reactRefresh,
-		},
-		rules: {
-			...reactHooks.configs.recommended.rules,
-			"react-refresh/only-export-components": [
-				"warn",
-				{ allowConstantExport: true },
-			],
-			...react.configs.recommended.rules,
-			...react.configs["jsx-runtime"].rules,
+  { ignores: ["dist"] },
+  {
+    extends: [js.configs.recommended, ...tseslint.configs.strictTypeChecked],
+    files: ["**/*.{ts,tsx}"],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: globals.browser,
+      parserOptions: {
+        project: [
+          "./tsconfig.json",
+          "./tsconfig.app.json",
+          "./tsconfig.node.json",
+        ],
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
+    plugins: {
+      react,
+      "react-hooks": reactHooks,
+      "react-refresh": reactRefresh,
+    },
+    rules: {
+      ...reactHooks.configs.recommended.rules,
+      "react-refresh/only-export-components": [
+        "warn",
+        { allowConstantExport: true },
+      ],
+      ...react.configs.recommended.rules,
+      ...react.configs["jsx-runtime"].rules,
     },
     settings: {
       react: {
         version: "detect",
       },
-    }
-	}
+    },
+  },
 );

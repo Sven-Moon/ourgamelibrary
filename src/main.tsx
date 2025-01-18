@@ -5,9 +5,9 @@ import App from "./App/App";
 
 const rootElement = document.getElementById("root");
 if (rootElement !== null) {
-	createRoot(rootElement).render(
-		<StrictMode>
-			<App />
-		</StrictMode>
-	);
+  createRoot(rootElement).render(
+    <StrictMode>
+      <App />
+    </StrictMode>,
+  );
 }

@@ -3,18 +3,10 @@
     "outDir": "./dist/",
     "baseUrl": ".",
     "paths": {
-      "src/*": [
-        "src/*"
-      ],
-      ":app/*": [
-        "src/app/*"
-      ],
-      ":components/*": [
-        "src/components/*"
-      ],
-      ":pages/*": [
-        "src/pages/*"
-      ]
+      "src/*": ["src/*"],
+      ":app/*": ["src/app/*"],
+      ":components/*": ["src/components/*"],
+      ":pages/*": ["src/pages/*"]
     },
     "composite": true,
     "moduleResolution": "bundler",
@@ -22,11 +14,7 @@
     "allowSyntheticDefaultImports": true,
     "jsx": "react-jsx",
     "strictNullChecks": true,
-    "strict": true,
+    "strict": true
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.d.ts"
-  ]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts"]
 }

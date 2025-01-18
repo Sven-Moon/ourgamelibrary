@@ -4,10 +4,10 @@ import { resolve } from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
-	resolve: {
-		alias: {
-			src: resolve(__dirname, "src"),
-		},
-	},
-	plugins: [react()],
+  resolve: {
+    alias: {
+      src: resolve(__dirname, "src"),
+    },
+  },
+  plugins: [react()],
 });
