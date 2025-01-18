@@ -2,20 +2,12 @@ const App = () => {
   return (
     <>
       <div>
-        <a
-          href="https://vite.dev"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://vite.dev" target="_blank" rel="noreferrer">
           <div className="text-center text-3xl font-bold">
             image would go here
           </div>
         </a>
-        <a
-          href="https://react.dev"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://react.dev" target="_blank" rel="noreferrer">
           image would go here
         </a>
       </div>

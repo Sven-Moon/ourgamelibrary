@@ -16,7 +16,7 @@ const prettierConfig = {
   htmlWhitespaceSensitivity: "css",
   endOfLine: "lf",
   embeddedLanguageFormatting: "auto",
-  singleAttributePerLine: true,
+  singleAttributePerLine: false,
   plugins: ["prettier-plugin-tailwindcss"],
 };
 
