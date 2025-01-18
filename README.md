@@ -1,6 +1,13 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## VS Code Setup
+
+### 
+- VS Code Extensions
+  - [Tailwind CSS IntelliSense (Tailwind)](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+  - -language-postcss](https://marketplace.visualstudio.com/items?itemName=cpylua.language-postcss)
+- Settings: 
+  - file.associations: *.css: tailwindcss 
 
 Currently, two official plugins are available:
 
