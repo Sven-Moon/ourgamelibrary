@@ -5,12 +5,9 @@
 
 ## Description
 
-
 ## Testing Steps
 
-
 ## Screenshots (if applicable)
-
 
 ## Checklist
 

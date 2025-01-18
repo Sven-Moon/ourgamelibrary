@@ -1,11 +1,10 @@
-function App() {
-
+const App = () =>  {
 	return (
 		<>
 			<div>
 				<a
 					href="https://vite.dev"
-					target="_blank"
+          target="_blank" rel="noreferrer"
 				>
 					<div className="text-center text-3xl font-bold">
 						image would go here
@@ -13,7 +12,7 @@ function App() {
 				</a>
 				<a
 					href="https://react.dev"
-					target="_blank"
+          target="_blank" rel="noreferrer"
 				>
 					image would go here
 				</a>
