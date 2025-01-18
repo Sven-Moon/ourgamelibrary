@@ -21,7 +21,6 @@
     "module": "preserve",
     "allowSyntheticDefaultImports": true,
     "jsx": "react-jsx",
-    "target": "ES6",
   },
   "include": [
     "src/**/*.ts",
