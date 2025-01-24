@@ -1,22 +1,18 @@
 import React from 'react';
-import { Container, Box, Typography } from '@mui/material';
+import Page from 'src/components/Surfaces/page';
 
 const AuthLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
   return (
-    <Container maxWidth="sm">
-      <Box
-        display="flex"
-        flexDirection="column"
-        justifyContent="center"
-        alignItems="center"
-        minHeight="100vh"
-      >
-        <Typography variant="h4" component="h1" gutterBottom>
-          Welcome to the Auth Page
-        </Typography>
+    <div className="min-w-screen mx-auto">
+      <Page id="login-page">
+        <h1 className="text-4xl font-bold mb-4 m-8">
+          Community Lending Library
+        </h1>
+        <div className="flex-grow h-1/3"></div>
         {children}
-      </Box>
-    </Container>
+        <div className="flex-grow h-2/3"></div>
+      </Page>
+    </div>
   );
 };
 

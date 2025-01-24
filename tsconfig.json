@@ -3,10 +3,18 @@
     "outDir": "./dist/",
     "baseUrl": ".",
     "paths": {
-      "src/*": ["src/*"],
-      ":app/*": ["src/app/*"],
-      ":components/*": ["src/components/*"],
-      ":pages/*": ["src/pages/*"]
+      "src/*": [
+        "./src/*"
+      ],
+      ":app/*": [
+        "src/app/*"
+      ],
+      ":cmp/*": [
+        "/src/components/*"
+      ],
+      ":pages/*": [
+        "src/pages/*"
+      ]
     },
     "composite": true,
     "moduleResolution": "bundler",
@@ -16,5 +24,9 @@
     "strictNullChecks": true,
     "strict": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.d.ts"
+  ]
 }
