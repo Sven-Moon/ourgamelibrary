@@ -24,7 +24,6 @@
     "@emotion/styled": "^11.14.0",
     "@eslint/js": "^9.17.0",
     "@mui/styled-engine": "^6.4.0",
-    "@mui/system": "^6.4.0",
     "@types/node": "^22.10.6",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
