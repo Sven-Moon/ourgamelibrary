@@ -1,25 +1,17 @@
 import * as React from 'react';
 import { Input as BaseInput, InputProps } from '@mui/base/Input';
-import { useTheme } from '@mui/system';
 import clsx from 'clsx';
-
-function useIsDarkMode() {
-  const theme = useTheme();
-  return theme.palette.mode === 'dark';
-}
 
 const resolveSlotProps = (fn: any, args: any) =>
   typeof fn === 'function' ? fn(args) : fn;
 
 const TextInput = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
-  // Replace this with your app logic for determining dark modes
-  const isDarkMode = useIsDarkMode();
 
   return (
     <BaseInput
       ref={ref}
       {...props}
-      className={clsx(isDarkMode ? 'dark' : '', props.className, "dark:text-gray-200")}
+      className={"dark:text-gray-200"}
       slotProps={{
         ...props.slotProps,
         input: (ownerState) => {

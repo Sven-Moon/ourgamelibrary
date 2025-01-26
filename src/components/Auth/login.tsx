@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { Button } from '@mui/base';
 import 'tailwindcss/tailwind.css';
-import TextInput from '../Forms/textInput';
-import Card from 'src/components/Surfaces/card';
-import Box from 'src/components/Surfaces/box';
-import Label from '../Forms/label';
+import TextInput from ':forms/textInput';
+import Card from ':cmp/Surfaces/card';
+import Box from ':cmp/Surfaces/box';
+import Label from ':forms/label';
 import { default as CustomButton } from '../Forms/button';
 
 const Login: React.FC = () => {

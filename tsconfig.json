@@ -4,17 +4,20 @@
     "baseUrl": ".",
     "paths": {
       "src/*": [
-        "./src/*"
+        "src/*"
       ],
       ":app/*": [
         "src/app/*"
       ],
       ":cmp/*": [
-        "/src/components/*"
+        "src/components/*"
+      ],
+      ":forms/*": [
+        "src/components/Forms/*"
       ],
       ":pages/*": [
         "src/pages/*"
-      ]
+      ],
     },
     "composite": true,
     "moduleResolution": "bundler",

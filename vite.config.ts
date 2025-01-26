@@ -8,6 +8,10 @@ export default defineConfig({
   resolve: {
     alias: {
       src: resolve(__dirname, "src"),
+      ":app": resolve(__dirname, "src/app"),
+      ":cmp": resolve(__dirname, "src/components"),
+      ":forms": resolve(__dirname, "src/components/Forms"),
+      ":pages": resolve(__dirname, "src/pages"),
     },
   },
   plugins: [react(), ViteRestart({
