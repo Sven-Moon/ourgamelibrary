@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@variant dark (&:where(.dark, .dark *));
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -10,6 +12,7 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  width: 100%;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,7 +32,7 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
+  display: block;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -52,16 +55,23 @@ button {
   transition: border-color 0.25s;
 }
 
-button:hover {
-  border-color: #646cff;
-}
 
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+input {
+  border-radius: 2px;
+  border: 1px solid #1a1a1a;
+  padding: 0.6em 1.2em;
+  font-size: 2em;
+  font-weight: 100;
+  font-family: inherit;
+  background-color: #1a1a1a;
+}
+
+@media (prefers-color-scheme: dark) {
   :root {
     color: #213547;
     background-color: #ffffff;

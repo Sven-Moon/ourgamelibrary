@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
-    "strict": true
+    "strict": true,
   },
-  "include": ["vite.config.ts", ".eslintrc.js"]
+  "include": [
+    "vite.config.ts",
+    ".eslintrc.js"
+  ]
 }
