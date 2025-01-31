@@ -4,7 +4,7 @@ import TextInput from ':forms/textInput';
 import Card from ':cmp/Surfaces/card';
 import Box from ':cmp/Surfaces/box';
 import Label from ':forms/label';
-import { default as CustomButton } from '../Forms/button';
+import { default as Button } from '../Forms/button';
 
 const Login: React.FC = () => {
   const [username, setUsername] = useState('');
@@ -50,17 +50,17 @@ const Login: React.FC = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <CustomButton className="w-full" fill="contained" type="submit" >
+          <Button className="w-full" fill="contained" type="submit" >
             Sign In
-          </CustomButton>
+          </Button>
         </form>
-        <CustomButton className="w-full mt-4" fill="contained" onClick={handleGoogleSignIn} >
+        <Button className="w-full mt-4" fill="contained" onClick={handleGoogleSignIn} >
           Sign In with <span className='text-blue-600'>G</span ><span className='text-red-600'>o</span ><span className='text-yellow-600'>o</span ><span className='text-blue-600'>g</span ><span className='text-green-600'>l</span ><span className='text-red-600'>e</span >
-        </CustomButton>
+        </Button>
         <hr className="my-4" />
-        <CustomButton className="w-full" fill="outlined" >
+        <Button className="w-full" fill="outlined" >
           Register
-        </CustomButton>
+        </Button>
       </Card>
     </Box>
   );

@@ -1,11 +1,8 @@
+import { Button as BaseButton, ButtonProps as BaseButtonProps } from '@mui/base/Button';
 import clsx from 'clsx';
 import React from 'react';
-import { Button as ButtonBase } from '@mui/base';
 
-interface ButtonPropss {
-  className?: string;
-  onClick?: () => void;
-  text: string | React.ReactNode;
+interface ButtonProps extends BaseButtonProps {
   fill?: 'base' | 'contained' | 'outlined';
 }
 
@@ -17,13 +14,8 @@ const fillType = {
 const uiDisabled = 'disabled:text-slate-700 disabled:dark:text-slate-400 disabled:bg-slate-200 disabled:dark:bg-slate-700 disabled:cursor-default disabled:shadow-none disabled:dark:shadow-none disabled:hover:bg-slate-200 disabled:hover:dark:bg-slate-600 disabled:border-none';
 const shadow = "shadow-md dark:shadow-black active:shadow-none hover:shadow-none"
 
-import { Button as BaseButton, ButtonProps } from '@mui/base/Button';
 
-interface MyButtonProps extends ButtonProps {
-  fill?: 'base' | 'contained' | 'outlined';
-}
-
-export const Button = React.forwardRef<HTMLButtonElement, MyButtonProps>(
+export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (props, ref) => {
     const { className, fill, ...other } = props;
     return (
